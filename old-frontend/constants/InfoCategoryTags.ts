@@ -1,0 +1,24 @@
+import { CategoryName } from 'types/categories';
+
+const INFO_CATEGORY_TAGS: { [key: string]: CategoryName } = {
+  TRAVEL__INFORMATION__PUBLIC: 'TRAVEL',
+  TRANSPORT__INFORMATION__PUBLIC: 'TRANSPORT',
+  FINANCE__INFORMATION__PUBLIC: 'FINANCE',
+  CAREER__INFORMATION__PUBLIC: 'CAREER',
+  SOCIAL_INTERESTS__INFORMATION__PUBLIC: 'SOCIAL_INTERESTS',
+  HOME__INFORMATION__PUBLIC: 'HOME',
+  GARDEN__INFORMATION__PUBLIC: 'GARDEN',
+  FOOD__INFORMATION__PUBLIC: 'FOOD',
+  LAUNDRY__INFORMATION__PUBLIC: 'LAUNDRY'
+};
+
+const REVERSED_INFO_CATEGORY_TAGS: { [key in CategoryName]?: string } = {};
+for (const infoTag in INFO_CATEGORY_TAGS) {
+  REVERSED_INFO_CATEGORY_TAGS[INFO_CATEGORY_TAGS[infoTag]] = infoTag;
+}
+
+export function getTagFromCategory(cat: CategoryName) {
+  return REVERSED_INFO_CATEGORY_TAGS[cat];
+}
+
+export default INFO_CATEGORY_TAGS;

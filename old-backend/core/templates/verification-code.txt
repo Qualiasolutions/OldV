@@ -1,0 +1,3 @@
+Your Vuet verification code is:
+
+{{code}}

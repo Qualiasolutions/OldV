@@ -1,0 +1,78 @@
+version: "3.3"
+
+networks:
+  dev:
+
+volumes:
+  postgresdata:
+    driver: local
+
+services:
+  dev-container:
+    image: 'vuetapi_devcontainer_dev-container'
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    env_file: .env.local
+    depends_on:
+      - postgres
+    volumes:
+      # - ~/.gitconfig:/root/.gitconfig
+      - ..:/workspace
+    command: sleep infinity
+    networks:
+      - dev
+
+  postgres:
+    image: postgres:14.1-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: 'vuet'
+      POSTGRES_USER: 'dev'
+      POSTGRES_PASSWORD: 'q'
+    volumes:
+      - postgresdata:/var/lib/mysql
+    networks:
+      - dev
+
+  localstack:
+    image: localstack/localstack:latest
+    environment:
+      - AWS_DEFAULT_REGION=eu-west-2
+      - EDGE_PORT=4566
+      - SERVICES=s3
+    ports:
+      - '4566-4583:4566-4583'
+    volumes:
+      # - "${TEMPDIR:-/tmp/localstack}:/tmp/localstack"
+      - ./localstack:/etc/localstack
+    networks:
+      - dev
+
+  stripe:
+    image: stripe/stripe-cli
+    environment:
+      STRIPE_API_KEY: 'sk_test_51Np4tsBccuT7X23pVviNFRR5k7MOeCRqAnHnjV6wgeMJsCuGQQqmmT1qevb7R2siTf9ikW7xmlamqIOwQ7k686J300soT5gXfo'
+    networks:
+      - dev
+    command: listen --forward-to http://host.docker.internal:8000/subscriptions/webhook/
+
+  vuetapi:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+      args:
+        - DJANGO_SECRET_KEY="django-insecure-=@u_3-bg4p&o#frb_uzxi+0=i$$1o4^0n2&-wl7(s%fy9wsjq)h"
+    env_file: .env.local
+    depends_on:
+      - postgres
+      - localstack
+      - stripe
+    volumes:
+      - ..:/app
+    ports:
+      - 8000:8000
+    networks:
+      - dev
+    command: sh ./start_local.sh

@@ -1,0 +1,63 @@
+version: 2.1
+
+orbs:
+  aws-ecr: circleci/aws-ecr@6.15.3
+  aws-ecs: circleci/aws-ecs@1.1.0
+  aws-cli: circleci/aws-cli@1.4.0
+
+workflows:
+  main:
+    jobs:
+      - build-and-push-prod:
+          filters:
+            branches:
+              only:
+                - master
+                - main
+      - aws-ecs/deploy-service-update:
+          filters:
+            branches:
+              only:
+                - master
+                - main
+          requires:
+            - build-and-push-prod
+          family: 'vuet-api'
+          cluster-name: 'vuet-autoscaling'
+          aws-region: $AWS_DEFAULT_REGION
+
+jobs:
+  build-and-push-prod:
+    machine: true
+    steps:
+      - aws-ecr/build-and-push-image:
+          account-url: AWS_ECR_ACCOUNT_URL
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          dockerfile: Dockerfile
+          path: "."
+          profile-name: "circleci"
+          region: AWS_DEFAULT_REGION
+          repo: "vuet-api"
+          tag: "latest,${CIRCLE_SHA1}"
+          extra-build-args: "
+            --build-arg ENV='PROD'
+            --build-arg POSTGRES_USER='postgres'
+            --build-arg POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+            --build-arg POSTGRES_HOST='vuet-database-2.ckqyxqcrxrbx.eu-west-2.rds.amazonaws.com'
+            --build-arg AWS_ACCESS_KEY_ID=''
+            --build-arg AWS_SECRET_ACCESS_KEY=''
+            --build-arg DJANGO_SECRET_KEY=$DJANGO_SECRET_KEY
+            --build-arg TWILIO_ACCOUNT_SID=$TWILIO_ACCOUNT_SID
+            --build-arg TWILIO_AUTH_TOKEN=$TWILIO_AUTH_TOKEN
+            --build-arg TWILIO_FROM_NUMBER=$TWILIO_FROM_NUMBER
+          "
+
+          # extra-build-args: "
+          #   --build-arg ENV=PROD
+          #   --build-arg POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+          #   --build-arg DJANGO_SECRET_KEY=$DJANGO_SECRET_KEY
+          #   --build-arg AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+          #   --build-arg AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+          #   --build-arg EMAIL_HOST_PASSWORD=$EMAIL_HOST_PASSWORD
+          # "

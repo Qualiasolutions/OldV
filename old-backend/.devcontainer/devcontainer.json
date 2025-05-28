@@ -1,0 +1,77 @@
+{
+	"name": "Python 3 & PostgreSQL",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "dev-container",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"[python]": {
+					"editor.defaultFormatter": "ms-python.black-formatter",
+					"editor.formatOnSave": true,
+					"editor.codeActionsOnSave": {
+						"source.organizeImports": true
+					}
+				},
+				"isort.args": [
+					"--profile",
+					"black"
+				],
+				"python.pythonPath": "/usr/local/bin/python3.11",
+				"python.defaultInterpreterPath": "/usr/local/bin/python3.11",
+				"python.linting.enabled": true,
+				"python.linting.pylintEnabled": true,
+				"python.linting.pylintArgs": [
+					"--load-plugins=pylint_django",
+					"--django-settings-module=vuet.settings",
+					"--disable=C0301"
+				],
+				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+				"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+				"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+				"python.formatting.provider": "black",
+				"python.formatting.blackArgs": [
+					"--line-length",
+					"88"
+				],
+				"python.sortImports.args": [
+					"--profile",
+					"black"
+				],
+				"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+				"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+				"python.linting.mypyPath": "/usr/local/bin/mypy",
+				"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+				"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+				"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+				"python.linting.ignorePatterns": [
+					"**/site-packages/**/*.py",
+					".vscode/*.py",
+					"**/*.pyi",
+					"**/migrations/*.py"
+				],
+				"_workbench.uiExtensions": [
+					"peterjausovec.vscode-docker"
+				],
+				"python.jediEnabled": false,
+				"python.analysis.extraPaths": [
+					"/usr/local/lib/python3.11",
+					"/usr/local/lib/python3.11/site-packages"
+				],
+				"mypy.configFile": "/workspace/mypy.ini",
+				"mypy.targets": [
+					"."
+				]
+			},
+			"extensions": [
+				"ms-python.black-formatter",
+				"ms-python.isort",
+				"ms-python.python",
+				"ms-python.pylint",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"matangover.mypy",
+				"eamodio.gitlens"
+			]
+		}
+	}
+}

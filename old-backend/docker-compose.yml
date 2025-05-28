@@ -1,0 +1,64 @@
+version: "3.3"
+
+networks:
+  dev:
+
+volumes:
+  postgresdata:
+    driver: local
+
+services:
+  postgres:
+    image: postgres:14.1-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: 'vuet'
+      POSTGRES_USER: 'dev'
+      POSTGRES_PASSWORD: 'q'
+    volumes:
+      - postgresdata:/var/lib/mysql
+    networks:
+      - dev
+
+
+  localstack:
+    image: localstack/localstack:latest
+    environment:
+      - AWS_DEFAULT_REGION=eu-west-1
+      - EDGE_PORT=4566
+      - SERVICES=s3
+      - DATA_DIR=/tmp/localstack/data
+    ports: 
+      - '4566-4583:4566-4583'
+    volumes: 
+      - "${TEMPDIR:-/tmp/localstack}:/tmp/localstack"
+      - ./localstack:/docker-entrypoint-initaws.d
+    networks:
+      - dev
+
+  vuetapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - AWS_ACCESS_KEY_ID=test
+        - AWS_SECRET_ACCESS_KEY=test
+        - ENV=LOCAL
+        - POSTGRES_PASSWORD=q
+        - POSTGRES_USER=dev
+        - POSTGRES_HOST=postgres
+        - DJANGO_SECRET_KEY="django-insecure-=@u_3-bg4p&o#frb_uzxi+0=i$$1o4^0n2&-wl7(s%fy9wsjq)h"
+        - TWILIO_ACCOUNT_SID=AC166dde3edbd01eb3ae5030a6e5929b7a
+        - TWILIO_AUTH_TOKEN=44f55bf4867b846cca8e5b88ae521239
+        - TWILIO_FROM_NUMBER=+15005550006
+    depends_on:
+      - postgres
+      - localstack
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    networks:
+      - dev
+    command: bash -c "python3 manage.py runserver 0.0.0.0:8000"

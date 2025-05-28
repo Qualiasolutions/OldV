@@ -1,0 +1,5 @@
+Hello {{invitee_name}}!
+
+{{inviter_name}} has invited you to their Vuet family.
+
+Log in to your account now to join them!

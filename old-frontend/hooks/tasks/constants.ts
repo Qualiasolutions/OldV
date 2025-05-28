@@ -1,0 +1,13 @@
+import INFO_CATEGORY_TAGS from 'constants/InfoCategoryTags';
+import { CategoryName } from 'types/categories';
+
+export const TAG_TO_CATEGORY: { [key: string]: CategoryName } = {
+  ...INFO_CATEGORY_TAGS,
+  SOCIAL_INTERESTS__BIRTHDAY: 'SOCIAL_INTERESTS',
+  SOCIAL_INTERESTS__ANNIVERSARY: 'SOCIAL_INTERESTS',
+  SOCIAL_INTERESTS__HOLIDAY: 'SOCIAL_INTERESTS',
+  PETS_FEEDING: 'PETS',
+  PETS_EXERCISE: 'PETS',
+  PETS_GROOMING: 'PETS',
+  PETS_HEALTH: 'PETS'
+};

@@ -1,0 +1,920 @@
+{
+  "pageTitles": {
+    "home": "Home",
+    "edit": "Edit Details",
+    "overview": "Overview",
+    "references": "References",
+    "categories": "Categories",
+    "guestList": "Guest List",
+    "events": "Events",
+    "lists": "Lists",
+    "messages": "Messages",
+    "settings": "Settings",
+    "addTask": "Add Task",
+    "editTask": "Edit Item",
+    "transport": "Transport",
+    "addEntity": "Add Entity",
+    "editEntity": "Edit Entity",
+    "entity": "View Entity",
+    "calendar": "Calendar",
+    "oops": "Oops!",
+    "personalAssistant": "Personal assistant",
+    "familySettings": "Family settings",
+    "addFamilyMember": "Add family member",
+    "addFriend": "Add to Vuet circle",
+    "editFamilyMember": "Edit {{fullName}}",
+    "createTask": "Add",
+    "whatMyFamilySees": "What My Family Sees",
+    "addingTasks": "Adding Tasks",
+    "dayPreferences": "Blocked and Preferred Days",
+    "blockedDayPreferences": "Blocked Days",
+    "preferredDayPreferences": "Preferred Days",
+    "categoryPreferences": "Category Preferences",
+    "taskLimits": "Task Limits",
+    "flexibleTaskPreferences": "Flexible Tasks",
+    "routineAndTimeBlocks": "Routines & Time Blocks",
+    "routines": "Routines",
+    "timeBlocks": "Time Blocks",
+    "integrations": "Integrations",
+    "myPlanningLists": "My Planning Lists",
+    "myShoppingLists": "My Shopping & Selling Lists",
+    "delegatedLists": "Delegated Lists",
+    "listsHome": "Lists Home",
+    "alerts": "Alerts",
+    "overdue": "Overdue",
+    "newItems": "Activity",
+    "quickJot": "QuickJot"
+  },
+  "blockedCategories": {
+    "instructions": {
+      "birthdays": "Don't schedule tasks from the following categories on my birthday",
+      "family-birthdays": "Don't schedule tasks from the following categories on family members' birthdays",
+      "national-holidays": "Don't schedule tasks from the following categories on holidays that I celebrate",
+      "trips": "Don't schedule tasks from the following categories when I have trips scheduled",
+      "term-time": "Don't schedule tasks from the following categories during term time, Monday to Friday",
+      "days-off": "Don't schedule tasks from the following categories during days off"
+    },
+    "names": {
+      "birthdays": "My Birthday",
+      "family-birthdays": "Family Members' Birthdays",
+      "national-holidays": "Holidays That I Celebrate",
+      "trips": "Trips",
+      "term-time": "Term Time",
+      "days-off": "Days Off"
+    }
+  },
+  "categories": {
+    "FAMILY": "Family",
+    "PETS": "Pets",
+    "SOCIAL_INTERESTS": "Social & Interests",
+    "EDUCATION_CAREER": "Education & Career",
+    "EDUCATION": "Education",
+    "CAREER": "Career",
+    "TRAVEL": "Travel",
+    "HEALTH_BEAUTY": "Health & Beauty",
+    "HOME_GARDEN": "Home & Garden, Food & Laundry",
+    "HOME": "Home",
+    "GARDEN": "Garden",
+    "FOOD": "Food",
+    "LAUNDRY": "Clothing & Laundry",
+    "FINANCE": "Finance",
+    "TRANSPORT": "Transport"
+  },
+  "tags": {
+    "PETS__FEEDING": "Feeding",
+    "PETS__EXERCISE": "Exercise",
+    "PETS__GROOMING": "Grooming",
+    "PETS__HEALTH": "Health",
+    "TRAVEL__TRANSPORT": "Transport",
+    "TRAVEL__ACTIVITY": "Activity",
+    "TRAVEL__ACCOMMODATION": "Accommodation",
+    "TRAVEL__INFORMATION__PUBLIC": "My Travel Information",
+    "TRANSPORT__INFORMATION__PUBLIC": "My Transport Information",
+    "FINANCE__INFORMATION__PUBLIC": "My Finance Information",
+    "SOCIAL_INTERESTS__INFORMATION__PUBLIC": "My Social Information",
+    "CAREER__INFORMATION__PUBLIC": "My Career Information",
+    "HOME__INFORMATION__PUBLIC": "My Home Information",
+    "GARDEN__INFORMATION__PUBLIC": "My Garden Information",
+    "FOOD__INFORMATION__PUBLIC": "My Food Information",
+    "LAUNDRY__INFORMATION__PUBLIC": "My Laundry Information",
+    "SOCIAL_INTERESTS__BIRTHDAY": "Birthday",
+    "SOCIAL_INTERESTS__ANNIVERSARY": "Anniversary",
+    "SOCIAL_INTERESTS__HOLIDAY": "Holiday I Celebrate"
+  },
+  "taskTypes": {
+    "TASK": "Task",
+    "DUE_DATE": "Due Date",
+    "APPOINTMENT": "Appointment",
+    "ACTIVITY": "Activity",
+    "TRANSPORT": "Transport",
+    "ACCOMMODATION": "Accommodation",
+    "HOLIDAY": "Holiday",
+    "ANNIVERSARY": "Anniversary"
+  },
+  "templates": {
+    "planningLists": {
+      "BEFORE_AFTER_TERM_TIME": "Before and After Term Time",
+      "PLAN_TRIP": "Plan a Trip",
+      "PACKING_LIST": "Packing List",
+      "PLAN_BIRTHDAY_ANNIVERSARY": "Celebrating Birthdays and Anniversaries",
+      "PLAN_HOLIDAY": "Celebrating Holidays",
+      "PLAN_EVENT": "Plan Event"
+    }
+  },
+  "linkTitles": {
+    "EDUCATION": "Education",
+    "CAREER": "Career",
+    "HOME": "My Homes",
+    "GARDEN": "My Outdoor Spaces & Gardens",
+    "FOOD": "Food",
+    "LAUNDRY": "Clothing & Laundry",
+    "generic": {
+      "calendar": "Calendar",
+      "lists": "Lists"
+    },
+    "family": {
+      "familyMembers": "Family Members"
+    },
+    "pets": {
+      "myPets": "My Pets",
+      "feedingSchedule": "Feeding",
+      "exercise": "Exercise",
+      "cleaningGrooming": "Grooming",
+      "health": "Health"
+    },
+    "social": {
+      "anniversaries": "Birthdays & Anniversaries",
+      "anniversaryDates": "Birthday & Anniversary Dates",
+      "anniversaryPlans": "Birthday & Anniversary Plans",
+      "nationalHolidays": "Holidays I Celebrate",
+      "events": "Celebration / Event Planning",
+      "socialPlans": "My Social Plans",
+      "socialMedia": "Social Media",
+      "hobbies": "Interests & Hobbies",
+      "mySocialInformation": "My Social Information",
+      "holidayDates": "Holiday Dates to Remember",
+      "holidayPlans": "Holiday Plans"
+    },
+    "educationCareer": {
+      "education": "Education",
+      "career": "Career"
+    },
+    "travel": {
+      "myTrips": "My Trips",
+      "myTravelPlans": "My Travel Plans",
+      "activities": "Food & Activities",
+      "accommodation": "Accommodation",
+      "transportation": "Transportation",
+      "travellerInfo": "My Travel Information"
+    },
+    "healthBeauty": {
+      "foodExercise": "Food & Exercise",
+      "appointments": "Appointment Type",
+      "measurements": "Measurements",
+      "goals": "Health & Beauty Goals",
+      "patients": "People"
+    },
+    "home": {
+      "myHomes": "My Homes",
+      "myHomeInformation": "My Home Information"
+    },
+    "garden": {
+      "gardens": "My Outdoor Spaces & Gardens",
+      "myGardenInformation": "My Garden Information"
+    },
+    "food": {
+      "foodPlans": "My Food Plans",
+      "myFoodInformation": "My Food Information"
+    },
+    "laundry": {
+      "laundryPlans": "My Laundry Plans",
+      "myLaundryInformation": "My Laundry Information"
+    },
+    "finance": {
+      "myFinances": "My Finances",
+      "myFinanceInformation": "My Finance Information"
+    },
+    "transport": {
+      "cars": "Cars & Motorcycles",
+      "boats": "Boats & Other",
+      "publicTransport": "Public Transport",
+      "myTransportInformation": "My Transport Information"
+    },
+    "annualDates": {
+      "anniversaries": "Birthdays & Anniversaries",
+      "nationalHolidays": "Holidays I Celebrate"
+    },
+    "career": {
+      "daysOff": "Days Off",
+      "careerGoal": "Career Planning & Goals",
+      "myCareerInformation": "My Career Information",
+      "employees": "Employees"
+    },
+    "education": {
+      "students": "Students",
+      "schools": "Schools",
+      "academicPlans": "Academic Plans",
+      "extracurricularPlans": "Extracurricular Plans",
+      "schoolTerms": "School Terms",
+      "school": {
+        "schoolBreaks": "School Breaks"
+      }
+    }
+  },
+  "entityTypes": {
+    "annualDates": "Annual Dates to Remember",
+    "appointment": "Appointment Type",
+    "career": "Career",
+    "education": "Education",
+    "employees": "Employees",
+    "cars": "Cars & Motorcycles",
+    "boats": "Boats & Other",
+    "public-transport": "Public Transport",
+    "events": "Celebration / Event Planning",
+    "anniversaries": "Birthdays & Anniversaries",
+    "hobbies": "Interests & Hobbies",
+    "health-measurement": "Measurements",
+    "health-goal": "Health & Beauty Goals",
+    "trips": "Trips",
+    "travel-plans": "Travel Plans",
+    "pets": "Pets",
+    "patient": "People",
+    "days-off": "Days Off",
+    "holidays": "Holidays",
+    "holiday-plans": "Holiday Plans",
+    "holiday-dates": "Holiday Dates",
+    "schools": "Schools",
+    "academic-plans": "Academic Plans",
+    "anniversary-plans": "Birthday and Anniversary Plans",
+    "anniversary-dates": "Birthday and Anniversary Dates",
+    "extracurricular-plans": "Extracurricular Plans",
+    "career-goals": "Career Planning & Goals",
+    "homes": "Homes",
+    "gardens": "Gardens",
+    "foodPlans": "My Food Plans",
+    "laundryPlans": "My Laundry Plans",
+    "clothing": "Laundry items",
+    "social-plans": "Social Plans",
+    "social-media": "Social Media",
+    "students": "Students",
+    "school-breaks": "School Breaks",
+    "health-beauty": "Health & Beauty",
+    "finance": "Finance Items",
+    "SchoolBreak": "School Breaks",
+    "Flight": "Flights",
+    "TrainBusFerry": "Trains",
+    "RentalCar": "Rental Cars",
+    "TaxiOrTransfer": "Taxis or Transfers",
+    "DriveTime": "Drive times",
+    "HotelOrRental": "Hotels",
+    "StayWithFriend": "Stays with friends",
+    "Birthday": "Birthday",
+    "Anniversary": "Anniversary",
+    "FAMILY": "Family",
+    "PETS": "Pets",
+    "SOCIAL_INTERESTS": "Social & Interests",
+    "EDUCATION_CAREER": "Education & Career",
+    "TRAVEL": "Travel",
+    "HEALTH_BEAUTY": "Health & Beauty",
+    "HOME_GARDEN": "Home, Food & Laundry",
+    "FINANCE": "Finance",
+    "TRANSPORT": "Transport",
+    "HOME": "Home",
+    "GARDEN": "Garden",
+    "FOOD": "Food",
+    "LAUNDRY": "Clothing & Laundry",
+    "EDUCATION": "Education",
+    "CAREER": "Career",
+    "PETS__FEEDING": "Feeding",
+    "PETS__EXERCISE": "Exercise",
+    "PETS__GROOMING": "Grooming",
+    "PETS__HEALTH": "Health",
+    "TRAVEL__TRANSPORT": "Transport",
+    "TRAVEL__ACTIVITY": "Activity",
+    "TRAVEL__ACCOMMODATION": "Accommodation",
+    "TRAVEL__INFORMATION__PUBLIC": "My Travel Information",
+    "TRANSPORT__INFORMATION__PUBLIC": "My Transport Information",
+    "FINANCE__INFORMATION__PUBLIC": "My Finance Information",
+    "SOCIAL_INTERESTS__INFORMATION__PUBLIC": "My Social Information",
+    "SOCIAL_INTERESTS__BIRTHDAY": "Birthdays",
+    "SOCIAL_INTERESTS__ANNIVERSARY": "Anniversaries",
+    "SOCIAL_INTERESTS__HOLIDAY": "Holidays I Celebrate",
+    "CAREER__INFORMATION__PUBLIC": "My Career Information",
+    "HOME__INFORMATION__PUBLIC": "My Home Information",
+    "GARDEN__INFORMATION__PUBLIC": "My Garden Information",
+    "FOOD__INFORMATION__PUBLIC": "My Food Information",
+    "LAUNDRY__INFORMATION__PUBLIC": "My Laundry Information"
+  },
+  "hiddenTags": {
+    "MOT_DUE": "MOT",
+    "INSURANCE_DUE": "Insurance",
+    "WARRANTY_DUE": "Warranty",
+    "SERVICE_DUE": "Service",
+    "TAX_DUE": "Tax"
+  },
+  "entityResourceTypeNames": {
+    "ProfessionalEntity": "Entity",
+    "Car": "Vehicle",
+    "Boat": "Boat or Other",
+    "PublicTransport": "Public Transport",
+    "Event": "Event",
+    "List": "List",
+    "Birthday": "Birthday",
+    "Employee": "Employee",
+    "Anniversary": "Anniversary",
+    "Hobby": "Hobby",
+    "Holiday": "Holiday",
+    "HolidayPlan": "Holiday Plan",
+    "HealthGoal": "Health / Beauty Goal",
+    "HealthMeasurement": "Measurement",
+    "Trip": "Trip",
+    "TravelPlan": "Travel Plan",
+    "Flight": "Flight",
+    "TrainBusFerry": "Train, Bus or Ferry",
+    "TaxiOrTransfer": "Taxi or Transfer",
+    "RentalCar": "Rental Car",
+    "DriveTime": "Drive Time",
+    "HotelOrRental": "Hotel or Rental",
+    "StayWithFriend": "Stay With Friend",
+    "Vet": "Vet",
+    "Walker": "Walker",
+    "Groomer": "Groomer",
+    "Sitter": "Sitter",
+    "MicrochipCompany": "Microchip Company",
+    "InsuranceCompany": "Insurance Company",
+    "InsurancePolicy": "Insurance Policy",
+    "Pet": "Pet",
+    "DaysOff": "Days Off",
+    "AcademicPlan": "Academic Plan",
+    "ExtracurricularPlan": "Extracurricular Plan",
+    "CareerGoal": "Career Goal",
+    "School": "School",
+    "Student": "Student",
+    "SchoolBreak": "School Break",
+    "Home": "Home",
+    "Garden": "Garden",
+    "FoodPlan": "Food Plan",
+    "LaundryPlan": "Laundry Plan",
+    "SocialMedia": "Social Media",
+    "SocialPlan": "Social Plan",
+    "HealthBeauty": "Health / Beauty",
+    "Finance": "Finance",
+    "Patient": "Person",
+    "Appointment": "Appointment",
+    "AnniversaryPlan": "Birthday / Anniversary Plan"
+  },
+  "filters": {
+    "userFilters": "User filters",
+    "entityFilters": "Entity filters",
+    "categoryFilters": "Category filters",
+    "taskTypeFilters": "Task Type filters",
+    "completionFilters": "Completion filters"
+  },
+  "common": {
+    "uncategorised": "Uncategorised",
+    "invitee": "Invitee",
+    "status": "Status",
+    "accepted": "Accepted",
+    "rejected": "Rejected",
+    "maybe": "Maybe",
+    "unsent": "Unsent",
+    "send": "Send",
+    "start": "Start",
+    "end": "End",
+    "done": "Done",
+    "edit": "Edit",
+    "change": "Change",
+    "other": "Other",
+    "complete": "Complete",
+    "incomplete": "Incomplete",
+    "name": "Name",
+    "value": "Value",
+    "members": "Members",
+    "noTimeBlocksForDay": "No time blocks for this day",
+    "timeBlockBreakpoints": "Set Day Breakpoints",
+    "resultingTimeBlocks": "Resulting Time Blocks",
+    "addBreakpoint": "Add Breakpoint",
+    "updateSuccess": "Updated successfully",
+    "confirm": "Confirm",
+    "clear": "Clear",
+    "until": "Until",
+    "from": "From",
+    "allDay": "All day",
+    "anyTime": "Any time",
+    "today": "Today",
+    "apply": "Apply",
+    "frequency": "Frequency",
+    "timePeriod": "Time period",
+    "none": "None",
+    "verify": "Verify",
+    "add": "Add",
+    "invite": "Invite",
+    "oops": "Oops",
+    "next": "Next",
+    "previous": "Previous",
+    "finish": "Finish",
+    "back": "Back",
+    "hide": "Hide",
+    "continue": "Continue",
+    "skip": "Skip",
+    "save": "Save",
+    "submit": "Submit",
+    "ok": "OK",
+    "or": "or",
+    "show": "Show",
+    "cancel": "Cancel",
+    "tasks": "Tasks",
+    "minutes": "minutes",
+    "hours": "hours",
+    "days": "days",
+    "mins": "mins",
+    "month": "Month",
+    "addTitle": "Add title",
+    "addNew": "Add new",
+    "accept": "Accept",
+    "reject": "Reject",
+    "yes": "Yes",
+    "no": "No",
+    "update": "Update",
+    "create": "Create",
+    "delete": "Delete",
+    "search": "Type to search",
+    "category": "Category",
+    "thing": "Thing",
+    "type": "Type",
+    "pleaseSelect": "Please select",
+    "selectAll": "Select all",
+    "addAnother": "Add Another",
+    "loadMore": "Load more",
+    "loadOlder": "Load older",
+    "pending": "pending",
+    "markDone": "Mark as done",
+    "ignore": "Ignore",
+    "list": "List",
+    "lists": "Lists",
+    "item": "Item",
+    "items": "Items",
+    "chat": "Chat",
+    "emailAddress": "Email address",
+    "errors": {
+      "generic": "Oops, something went wrong. Please try again later.",
+      "invalidPhone": "That doesn't seem to be a valid phone number.",
+      "invalidEmail": "That doesn't seem to be a valid email address.",
+      "phoneUsedError": "An account already exists for that phone number.",
+      "emailUsedError": "An account already exists for that email address.",
+      "passwordsDontMatch": "Those passwords don't match",
+      "invalidCodeError": "That code is incorrect"
+    }
+  },
+  "misc": {
+    "turnsAgeIn": "Turns {{age}} in {{year}}",
+    "editCountryList": "Add National Holidays",
+    "phoneNumber": "Phone number",
+    "phoneNo": "Phone no.",
+    "currentlyNoEntities": "You don't currently have any {{entityType}}. Click the + button below to add some",
+    "currentlyNoProfessionalEntities": "You don't currently have any entities in the {{categoryName}} category. Click the + button below to add some"
+  },
+  "screens": {
+    "guestList": {
+      "inviteAll": "Send all unsent invites",
+      "selectContacts": "Invite phone contacts",
+      "inviteByPhone": "Invite by phone or email"
+    },
+    "drawer": {
+      "logOut": "Log Out"
+    },
+    "logIn": {
+      "password": "Password",
+      "welcomeBack": "Welcome back!",
+      "enterNumber": "Please enter your phone number to log in",
+      "enterEmail": "Please enter your email to log in",
+      "phoneNumber": "Phone number",
+      "emailAddress": "Email address",
+      "username": "Username",
+      "forgotPassword": "Forgot password",
+      "dontHaveAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "failedLogin": "Failed to log in. Please check that you have entered your credentials correctly"
+    },
+    "signUp": {
+      "welcome": "Welcome",
+      "usePhoneNumber": "Use your phone number to create an account",
+      "useEmail": "Use your email to create an account - note this option is not recommended. Please use your phone number to create an account if possible.",
+      "phoneNumber": "Phone number",
+      "emailAddress": "Email address",
+      "alreadyHaveAccount": "Already have an account?",
+      "logIn": "Log in",
+      "phoneInvalidError": "That doesn't seem to be a valid phone number."
+    },
+    "validatePhone": {
+      "title": "Verification code",
+      "enterCode": "Please enter the 6-digit code we've sent to your mobile number",
+      "enterEmailCode": "Please enter the 6-digit code we've sent to your email address",
+      "didntGetCode": "Didn't get the code?",
+      "resend": "Resend"
+    },
+    "createPassword": {
+      "title": "Verified!",
+      "addPassword": "Please add your password to complete your account set up",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "passwordTooShort": "Your password must be at least {{minimumLength}} letters long",
+      "passwordError": "Hmm, something went wrong - make sure your password is secure (at least 8 letters and not too common) and that your passwords match"
+    },
+    "forgotPassword": {
+      "title": "Reset Password",
+      "enterEmail": "Enter your email to receive a password reset code",
+      "enterPhone": "Enter your phone number to receive a password reset code",
+      "logIn": "Log In",
+      "reset": "Reset",
+      "newPassword": "Enter your new password below"
+    },
+    "createAccount": {
+      "title": "Create an account",
+      "addDetails": "Add your details to start using Vuet App",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "dob": "Date of Birth",
+      "memberColour": "Member colour",
+      "invalidDateMessage": "Invalid date detected - please enter a date in the past"
+    },
+    "addFamily": {
+      "title": "Add family members",
+      "startAdding": "Start by adding a thumbnail to your group",
+      "currentlyNone": "You currently have no family members added",
+      "addMember": "Add member"
+    },
+    "addFamilyMember": {
+      "title": "Add a member",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "dob": "Date of Birth",
+      "memberColour": "Member colour",
+      "phoneNumber": "Phone number",
+      "add": "Add",
+      "invalidDateMessage": "Invalid date detected - please enter a date in the past"
+    },
+    "createUserInvite": {
+      "success": "Successfully invited user",
+      "errors": {
+        "alreadyHasFamily": "This user is already a member of a family",
+        "alreadyInFamily": "This user has already been added to your family",
+        "alreadyInvited": "This user has already been invited to your family"
+      }
+    },
+    "welcomeToVuet": {
+      "title": "Welcome to Vuet App {{name}}",
+      "createdSuccessfully": "Your account has been created successfully.",
+      "willSend": "We'll send all the members a welcome notification."
+    },
+    "familyRequest": {
+      "familyTitle": "Family request",
+      "familySubtitle": "{{name}} wants to add you to their family.",
+      "friendTitle": "Friend request",
+      "friendSubtitle": "{{name}} wants to add you to their Vuet circle."
+    },
+    "settings": {
+      "logOutText": "Log Out",
+      "title": "Settings"
+    },
+    "familySettings": {
+      "family": "Family",
+      "familyMembers": "Family Members"
+    },
+    "friendSettings": {
+      "friends": "Friends"
+    },
+    "whatMyFamilySees": {
+      "blurb": "Family members will see all tasks, due date and appointments to which they have been assigned. You can share other appointments using the settings below."
+    },
+    "blockedDayPreferences": {
+      "blurb": "When selected, tasks for a specific category will not be placed on the relevant days. E.g. if Pets / Trips is ticked then tasks from the Pets category will not be scheduled during trips.",
+      "noOptionsBlurb": "There are no blocked day options to configure for this category."
+    },
+    "addTask": {
+      "title": "Add Task",
+      "createSuccess": "Successfully created new task",
+      "createTask": "Create Task"
+    },
+    "editTask": {
+      "title": "Update Task",
+      "updateSuccess": "Successfully updated task",
+      "updateTask": "Update Task",
+      "deleteTask": "Delete Task"
+    },
+    "addEntity": {
+      "title": "Add {{entityType}}",
+      "createSuccess": "Successfully created new {{entityType}}"
+    },
+    "editEntity": {
+      "title": "Edit {{entityName}}",
+      "updateSuccess": "Successfully updated {{entityName}}"
+    },
+    "entityScreen": {
+      "noPermsBlurb": "You do not have permissions to view this entity"
+    },
+    "notFound": {
+      "noScreen": "This screen doesn't exist.",
+      "goHome": "Go to home screen!"
+    },
+    "listEntity": {
+      "typeOrUpload": "Type an item"
+    },
+    "eventPage": {
+      "thingsToDo": "Things to do before the party",
+      "guestList": "Guest List"
+    },
+    "myAccount": {
+      "updateSuccess": "Account details successfully updated",
+      "accountDetails": "Account Details",
+      "accountType": "Account Type",
+      "phoneNumber": "Associated Phone or Email",
+      "security": "Security"
+    },
+    "editPhoneNumber": {
+      "currentPhone": "Current phone number associated to this account:",
+      "currentEmail": "Current email associated to this account:",
+      "enterNew": "To update the phone number associated to this account, please enter your new number below:",
+      "enterNewEmail": "To update the email associated to this account, please enter your new email below:",
+      "takenPhone": "That phone number is already in use.",
+      "takenEmail": "That email is already in use.",
+      "updateSuccess": "Successfully updated phone number.",
+      "updateEmailSuccess": "Successfully updated email."
+    },
+    "editAccountType": {
+      "currentAccountType": "Current account type",
+      "standardPlan": "Standard plan",
+      "premiumPlan": "Premium plan",
+      "familyPlan": "Family plan",
+      "upgradeNow": "Upgrade now for all of these benefits:",
+      "upgrade": "Upgrade",
+      "renewsOn": "Renews on",
+      "willCancelOn": "Your plan will be cancelled on",
+      "changePlan": "Change my plan",
+      "ownedBy": "Plan owned by"
+    },
+    "editSecurity": {
+      "updatePassword": "Update your password",
+      "oldPassword": "Old Password",
+      "newPassword": "New Password",
+      "newPasswordConf": "Confirm New Password",
+      "oldPasswordIncorrect": "Your old password was not correct",
+      "passwordSuccess": "Your password was successfully updated"
+    },
+    "categoryList": {
+      "categoryPreferences": "{{category}} Preferences",
+      "quickNav": "Quick Nav"
+    },
+    "contact": {
+      "placeholder": "Let us know what you're thinking",
+      "success": "Message sent successfully! We'll get back to you as soon as possible"
+    },
+    "integrations": {
+      "noIntegrations": "No external calendars have been linked to this account",
+      "enterUrl": "Enter the iCal URL to link"
+    },
+    "routineTasks": {
+      "noTasks": "No tasks to show for this routine on this date"
+    }
+  },
+  "navigation": {
+    "dropdown": {
+      "placeholders": {
+        "QUICK_NAV": "Quick Nav",
+        "I_WANT_TO": "I Want To"
+      }
+    }
+  },
+  "components": {
+    "professionalCategories": {
+      "addCategoryBlurb": "What would you like to name your new category?",
+      "deleteCategoryQuestion": "Are you sure you would like to delete this category? No entities from this category will deleted"
+    },
+    "eventsList": {
+      "noInvites": "You do not have any pending event invites",
+      "accepted": "Accept",
+      "rejected": "Reject",
+      "maybe": "Tentative"
+    },
+    "phoneOrEmailInput": {
+      "useEmail": "Use email",
+      "usePhone": "Use phone"
+    },
+    "taskCard": {
+      "externalCalendar": "External Calendar"
+    },
+    "taskPartialCompletionModal": {
+      "rescheduleOneDay": "Task again one day later",
+      "rescheduleOneWeek": "Task again one week later",
+      "rescheduleOn": "Task again at a specified time:"
+    },
+    "taskRescheduleModal": {
+      "rescheduleOneDay": "Reschedule one day later",
+      "rescheduleOneWeek": "Reschedule one week later",
+      "rescheduleOn": "Reschedule at a specified time:"
+    },
+    "alertsList": {
+      "noAlerts": "You currently have no task conflict alerts"
+    },
+    "genericError": {
+      "message": "An unexpected error occurred"
+    },
+    "memberSelector": {
+      "family": "Family",
+      "friends": "My Vuet Circle",
+      "changeMembers": "Change member(s)",
+      "noMemberError": "No such member exists"
+    },
+    "calendar": {
+      "task": {
+        "viewOrEdit": "View/Edit task"
+      },
+      "showOlderEvents": "Show older events",
+      "showNewerEvents": "Show more",
+      "noTasks": "No tasks or deadlines to show - you may need to add tasks or adjust your filter settings",
+      "filters": "Filters"
+    },
+    "logOutModal": {
+      "logOut": "Log Out",
+      "sure": "Are you sure you would like to log out?"
+    },
+    "recurrenceSelector": {
+      "forever": "Forever",
+      "now": "Now",
+      "until": "Until",
+      "from": "From"
+    },
+    "referenceItem": {
+      "passwordModal": {
+        "blurb": "Enter your account password to view this reference"
+      }
+    },
+    "tagSelector": {
+      "selectedEntities": "Selected entities",
+      "selectedTags": "Selected tags",
+      "selectTags": "Select Tags",
+      "requiresPetTag": "You must add a pet tag to this task",
+      "requiresTravelTag": "You must add a travel tag to this task",
+      "requiresTag": "You must add a {{requirementName}} entity to this task",
+      "allowedTag": "You may add a {{requirementName}} entity to this task",
+      "noEntities": "No {{entityType}} entities found",
+      "createNewEntity": "Create new entity"
+    },
+    "messageThread": {
+      "send": "Send"
+    },
+    "imagePicker": {
+      "choosePhoto": "Choose photo",
+      "takePhoto": "Take photo"
+    },
+    "userInitials": {
+      "setupPending": "Setup Pending"
+    },
+    "planningLists": {
+      "addList": "+",
+      "noTemplates": "There are currently no templates from which to create planning lists",
+      "addListFromTemplate": "+ From Template",
+      "addSublist": "Add Sublist",
+      "deleteListModal": {
+        "title": "Delete list",
+        "blurb": "Are you sure you would like to delete this list?"
+      },
+      "deleteStoreModal": {
+        "title": "Delete store",
+        "blurb": "Are you sure you would like to delete this store?"
+      },
+      "deleteSublistModal": {
+        "title": "Delete sublist",
+        "blurb": "Are you sure you would like to delete this sublist?"
+      },
+      "addListModal": {
+        "add": "Add List",
+        "selectTemplate": "Select Template",
+        "createNew": "Create New"
+      },
+      "storeSelector": {
+        "store": "No store",
+        "addNew": "Add new",
+        "manageStores": "Manage Stores",
+        "nameBlurb": "What would you like to name your new store?",
+        "deleteQuestion": "Are you sure you would like to delete this store?"
+      },
+      "saveTemplateModal": {
+        "blurb": "What would you like to save your template as?"
+      },
+      "createFromTemplateModal": {
+        "blurb": "What would you like to name your new list?"
+      },
+      "itemActionModal": {
+        "deleteItem": "Delete Item",
+        "createTask": "Create Task"
+      }
+    },
+    "shoppingLists": {
+      "addList": "Add List",
+      "addSublist": "Add Store",
+      "deleteListModal": {
+        "title": "Delete list",
+        "blurb": "Are you sure you would like to delete this list?"
+      },
+      "deleteSublistModal": {
+        "title": "Delete store list",
+        "blurb": "Are you sure you would like to delete this store list?"
+      },
+      "groupByStore": "Group by store",
+      "groupByList": "Group by list",
+      "delegationButton": {
+        "delegate": "Delegate",
+        "delegations": "Delegations",
+        "delegateTo": "Delegate To",
+        "delegateToSomeoneElse": "Delegate to someone else"
+      }
+    },
+    "delegatedLists": {
+      "receivedDelegations": "Lists Delegated To Me",
+      "sentDelegations": "Lists Delegated By Me"
+    },
+    "entityPages": {
+      "car": {
+        "addingDueDate": "Adding {{dueDateType}} due date",
+        "dueDateTitle": "{{dueDateType}} Due",
+        "nextDueDate": "Next {{dueDateType}} due date",
+        "addDueDate": "Add {{dueDateType}} due date"
+      }
+    },
+    "task": {
+      "scheduleNext": "Schedule next {{dueDateType}} due date",
+      "editOccurrence": "Edit occurrence",
+      "editTask": "Edit Item",
+      "editAll": "Edit all",
+      "deleteOccurrence": "Delete occurrence",
+      "deleteOccurrenceConfirmation": "Are you sure you would like to delete this occurrence?",
+      "deleteConfirmation": "Are you sure you would like to delete this task?",
+      "messages": "Messages",
+      "markComplete": "Mark Complete",
+      "markPartiallyCompleteAndRepeat": "Partially done / task again",
+      "markIncompleteAndReschedule": "Did not do / reschedule",
+      "markIncomplete": "Did not do / will not do",
+      "duplicateTask": "Duplicate Item",
+      "markAllOverdueAsIncompleteQuestion": "Would you like to mark all overdue tasks in the series as incomplete?"
+    },
+    "actionSelector": {
+      "placeholder": "Add Actions"
+    },
+    "reminderSelector": {
+      "placeholder": "Add Reminders"
+    },
+    "referencesList": {
+      "deletingGroup": "Delete reference group",
+      "deletingGroupConfirmation": "Are you sure you would like to delete this reference group?",
+      "noReferences": "This screen is a list of all {{categoryName}} References. No References have been added yet. To add, choose the {{entityNames}} and then References from the QuickNav.",
+      "noReferencesDefault": "No references have been added here yet - go to your entities to add references"
+    },
+    "schoolTerms": {
+      "addBreak": "Add Break",
+      "addTerm": "Add Term",
+      "addSchoolYear": "Add School Year",
+      "breaks": "Breaks",
+      "terms": "Terms",
+      "deleteYearConfirmationTitle": "Delete School Year",
+      "deleteYearConfirmationQuestion": "Are you sure you would like to permanently delete this school year?",
+      "firstDay": "First Day",
+      "lastDay": "Last Day"
+    },
+    "recurrentUpdateModal": {
+      "updateOccurrence": "Update occurrence",
+      "updateAfter": "Update all going forward"
+    },
+    "deleteTaskModal": {
+      "deleteOccurrence": "Delete occurrence",
+      "deleteAfter": "Delete all going forward"
+    },
+    "newItemsList": {
+      "newEntity": "New Entity",
+      "newTask": "New Task",
+      "newTaskCompletion": "Task completed",
+      "completedOn": "Completed on",
+      "uncheckedOn": "Unchecked on",
+      "createdOn": "Created on"
+    },
+    "messageList": {
+      "noMessages": "You haven't sent or received any messages yet"
+    },
+    "taskCompletionModal": {
+      "finalOccurrence": {
+        "wouldYouLikeToExtend": "This was the final occurrence in this series, would you like to extend the series?"
+      },
+      "dueDate": {
+        "wouldYouLikeToReschedule": "Would you like to schedule another due date?"
+      }
+    },
+    "premiumModal": {
+      "upgradeToPremium": "Upgrade to premium",
+      "blurb": "Upgrade to premium to access the full set of Vuet features",
+      "upgrade": "Upgrade"
+    },
+    "timezoneSelect": {
+      "selectTimezone": "Select Timezone"
+    }
+  }
+}

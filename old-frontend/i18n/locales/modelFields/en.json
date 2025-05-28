@@ -1,0 +1,245 @@
+{
+  "tasks": {
+    "task": {
+      "title": "Name of Task",
+      "location": "Location",
+      "members": "Doer(s)",
+      "duration": "Duration",
+      "recurrence": "Recurrence",
+      "reminders": "Send Reminder Notification before",
+      "actions": "Action to Task me before",
+      "start_datetime": "Starts",
+      "end_datetime": "Ends",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "start_timezone": "Start Timezone",
+      "end_timezone": "End Timezone",
+      "first_start_datetime": "First occurrence",
+      "contact_name": "Name",
+      "contact_email": "Email",
+      "contact_number": "Contact no.",
+      "image": "Image",
+      "notes": "Notes",
+      "is_flexible": "Add this to my calendar any time between the dates below",
+      "is_any_time": "Any time today / No Set Time",
+      "urgency": "Urgency",
+      "is_all_day": "All Day",
+      "earliest_action_date": "Earliest occurrence",
+      "due_date": "Due date",
+      "date": "Date",
+      "routine": "Routine",
+      "tags": "Tags",
+      "changeMembers": "Who is doing?",
+      "showOnWhoseCalendar": "Show on Whose Calendar?"
+    },
+    "helpText": {
+      "tags": "Every Task should be tagged for easy reference later",
+      "is_flexible": "The scheduling algorithm will find the earliest time to complete a task using the preferences set by Premium Users.",
+      "is_any_time": "Anytime during a day. There is no set time for this Task",
+      "actions": "Task yourself to work on a task or due date days or weeks before it occurs. There can be multiple Actions for a task.",
+      "reminders": "Remind yourself of a task",
+      "routine": "To include a task within a Routine window, set up Routines in Settings and when adding a Task the Routine can be chosen. These allows tasks to be set within certain windows of time.",
+      "show_only_start_and_end": "If checked then only the start and end of term will show on your calendars. If unchecked then we will display every day of the term."
+    },
+    "fixedTask": {
+      "start_datetime": "Start Datetime",
+      "end_datetime": "End Datetime"
+    },
+    "flexibleTask": {
+      "due_date": "Due Date"
+    },
+    "due_date": {
+      "date": "Date"
+    },
+    "transportTask": {
+      "flight_number": "Flight No.",
+      "booking_number": "Booking No.",
+      "start_location": "Start Location",
+      "end_location": "End Location",
+      "pickup_location": "Pickup Location",
+      "dropoff_location": "Dropoff Location"
+    },
+    "accommodationTask": {
+      "hotelName": "Hotel Name",
+      "friendName": "Friend Name"
+    },
+    "birthdayTask": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dateOfBirth": "Date of Birth"
+    },
+    "anniversaryTask": {
+      "name": "Name",
+      "start": "Start Date"
+    }
+  },
+  "entities": {
+    "entity": {
+      "name": "Name",
+      "owner": "Owner",
+      "members": "Members",
+      "taskMembers": "Doer(s)",
+      "description": "Description",
+      "image": "Image",
+      "notes": "Notes",
+      "reminder": "Remind me"
+    },
+    "car": {
+      "make": "Make",
+      "model": "Model",
+      "registration": "Registration",
+      "mot_due_date": "MOT Due",
+      "insurance_due_date": "Insurance Due",
+      "tax_due_date": "Tax Due",
+      "warranty_due_date": "Warranty Due",
+      "vehicle_type": "Vehicle Type",
+      "date_registered": "Date Registered",
+      "owner": "Owner",
+      "service_due_date": "Service Due"
+    },
+    "birthday": {
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "start_date": "Date of birth",
+      "members": "Select Family Members to remind:"
+    },
+    "anniversary": {
+      "start_date": "Start date",
+      "members": "Select Family Members to remind:"
+    },
+    "event": {
+      "start_datetime": "Start",
+      "end_datetime": "End"
+    },
+    "trip": {
+      "start_date": "Start Date",
+      "end_date": "End Date"
+    },
+    "trip-accommodation": {
+      "accommodation_type": "Type",
+      "carrier": "Carrier",
+      "confirmation_number": "Booking No.",
+      "checkin_datetime": "Start Time",
+      "checkout_datetime": "End Time"
+    },
+    "trip-activity": {
+      "type": "Activity type",
+      "address": "Address",
+      "company": "Company",
+      "confirmation_number": "Booking No.",
+      "contact_info": "Phone / Email",
+      "start_datetime": "Start Time",
+      "start_timezone": "Start Timezone",
+      "end_datetime": "End Time",
+      "end_timezone": "End Timezone"
+    },
+    "pet": {
+      "name": "Pet Name",
+      "type": "Type of Pet",
+      "breed": "Breed",
+      "dob": "Date of Birth",
+      "microchip_number": "Microchip number"
+    },
+    "academic-plan": {
+      "members": "Student(s)"
+    },
+    "extracurricular-plan": {
+      "members": "Student(s)"
+    },
+    "career-goal": {
+      "members": "Member(s)"
+    },
+    "home": {
+      "address": "Address",
+      "residence_type": "Property Type",
+      "house_type": "House Type",
+      "has_outside_area": "Outside Area?"
+    },
+    "holiday": {
+      "start_date": "Date"
+    },
+    "school": {
+      "address": "Address",
+      "phone_number": "Phone Number",
+      "email": "Email"
+    },
+    "student": {
+      "school_attended": "School"
+    },
+    "school-break": {
+      "name": "Break name",
+      "start_date": "First day of break",
+      "end_date": "Last day of break"
+    },
+    "mode-of-transport": {
+      "carrier": "Carrier",
+      "contact_details": "Contact details",
+      "booking_number": "Booking Number",
+      "start_location": "Departure location",
+      "end_location": "Arrival location",
+      "start_datetime": "Departure",
+      "start_timezone": "Departure timezone",
+      "end_datetime": "Arrival",
+      "end_timezone": "Arrival timezone"
+    },
+    "flight": {
+      "booking_number": "Flight number",
+      "start_location": "Departure airport",
+      "end_location": "Arrival airport",
+      "start_datetime": "Departure"
+    },
+    "rental-car": {
+      "booking_number": "Confirmation number",
+      "start_location": "Pick-up location",
+      "end_location": "Drop-off location"
+    },
+    "taxi-transfer": {
+      "booking_number": "Confirmation number",
+      "start_location": "Pick-up location",
+      "end_location": "Drop-off location"
+    },
+    "mode-of-accommodation": {
+      "address": "Address",
+      "contact_details": "Phone / Email"
+    },
+    "hotel": {
+      "hotel_name": "Hotel name",
+      "start_datetime": "Check-in",
+      "start_timezone": "Check-in timezone",
+      "end_datetime": "Check-out",
+      "end_timezone": "Check-out timezone"
+    },
+    "stay-with-friend": {
+      "friend_name": "Friend name",
+      "start_datetime": "Arrival",
+      "start_timezone": "Arrival timezone",
+      "end_datetime": "Departure",
+      "end_timezone": "Departure timezone"
+    }
+  },
+  "familyMember": {
+    "first_name": "First name",
+    "last_name": "Last name",
+    "dob": "Date of birth",
+    "member_colour": "Member colour",
+    "phone_number": "Phone number"
+  },
+  "schoolYear": {
+    "year": "School Year",
+    "school": "School",
+    "start_date": "First Day of School",
+    "end_date": "Last Day of School",
+    "show_on_calendars": "Show on Calendars"
+  },
+  "schoolBreak": {
+    "name": "Name",
+    "start_date": "Start Date",
+    "end_date": "End Date",
+    "show_on_calendars": "Show on Calendars",
+    "show_only_start_and_end": "Show only first and last days"
+  },
+  "schoolTerm": {
+    "start_date": "First Day of Term",
+    "end_date": "Last Day of Term"
+  }
+}
